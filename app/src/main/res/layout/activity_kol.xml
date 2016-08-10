@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical"
+    tools:context=".kol.KolActivity"
+    >
+
+    <!--titlebar-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px144"
+        android:background="@drawable/title_bar_line">
+
+        <TextView
+            style="@style/TitleBarText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text=""
+            android:id="@+id/kol_nickname"
+            />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/px143"
+            android:layout_height="@dimen/px143"
+            android:scaleType="fitXY"
+            android:src="@drawable/back"/>
+    </RelativeLayout>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/swipe_container"
+        >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px504">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/kol_top"
+                    />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/image_cover"
+                    />
+
+                <Button
+                    android:layout_width="@dimen/px167"
+                    android:layout_height="@dimen/px71"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/px43"
+                    android:layout_marginTop="@dimen/px39"
+                    android:background="@drawable/kol_detail_follow_bg"
+                    android:text="+ 关注"
+                    android:textColor="#ffffff"
+                    android:id="@+id/follow_kol"
+                    android:textSize="@dimen/px29"
+                    />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/kol_icon"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="@dimen/px210"
+                    android:layout_height="@dimen/px210"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/px243"
+                    app:civ_border_color="#ffffff"
+                    app:civ_border_width="@dimen/px9"
+                    android:src="@drawable/default_avatar"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/kol_icon"
+                    android:layout_alignBottom="@+id/kol_icon"
+                    android:layout_marginLeft="@dimen/px157"
+                    >
+                    <ImageView
+                        android:id="@+id/kol"
+                        android:layout_width="@dimen/px101"
+                        android:layout_height="@dimen/px43"
+                        android:background="@drawable/kol"
+                        android:visibility="gone"
+                        />
+                    <ImageView
+                        android:id="@+id/single_kol"
+                        android:layout_width="@dimen/px101"
+                        android:layout_height="@dimen/px43"
+                        android:background="@drawable/kol_single"
+                        android:visibility="gone"
+                        />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px91"
+                android:background="#ffffff"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:layout_width="@dimen/px20"
+                        android:layout_height="@dimen/px26"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/position"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/px24"
+                        android:text=""
+                        android:textColor="#919191"
+                        android:textSize="@dimen/px35"
+                        android:id="@+id/city"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/px27"
+                        android:text=""
+                        android:textColor="#919191"
+                        android:textSize="@dimen/px35"
+                        android:id="@+id/area"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/px20"
+                        android:text=""
+                        android:textColor="#49d8e3"
+                        android:textSize="@dimen/px29"
+                        android:textStyle="italic"
+                        android:id="@+id/kol_level"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="vertical"
+                >
+
+                <Button
+                    android:layout_width="@dimen/px317"
+                    android:layout_height="@dimen/px79"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/invite_cooper"
+                    android:id="@+id/invite_cooper"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px150"
+                android:background="@drawable/kol_detail_bg"
+                >
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:id="@+id/fans_info"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/fans"
+                        android:textColor="#353535"
+                        android:textSize="@dimen/px35"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="0"
+                        android:textColor="#919191"
+                        android:textSize="@dimen/px35"
+                        android:id="@+id/followed"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:id="@+id/follow_info"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/followers"
+                        android:textColor="#353535"
+                        android:textSize="@dimen/px35"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="0"
+                        android:textColor="#919191"
+                        android:textSize="@dimen/px35"
+                        android:id="@+id/follow"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px179"
+                android:text="      "
+                android:textColor="#919191"
+                android:textSize="@dimen/px35"
+                android:paddingLeft="@dimen/px49"
+                android:paddingTop="@dimen/px29"
+                android:background="#ffffff"
+                android:id="@+id/kol_desc"
+                />
+                <LinearLayout
+                    style="@style/LineHorDeep"/>
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px347"
+                android:background="#f6f7fb"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/px39"
+                    android:textColor="#353535"
+                    android:textSize="@dimen/px35"
+                    android:layout_marginTop="@dimen/px42"
+                    android:id="@+id/his_images_title"
+                    />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px20"
+                    android:paddingLeft="@dimen/px39"
+                    android:scrollbars="none"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/px217"
+                        android:orientation="horizontal"
+                        android:id="@+id/image_list"
+                        />
+                </HorizontalScrollView>
+
+                </LinearLayout>
+            <LinearLayout
+                style="@style/LineHorDeep"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px134"
+                android:background="@drawable/his_weibo_bg"
+                android:id="@+id/his_weibo"
+                >
+                <TextView
+                    android:layout_width="@dimen/px275"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/px39"
+                    android:text="@string/his_weibo"
+                    android:textColor="#353535"
+                    android:textSize="@dimen/px35"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="#919191"
+                    android:textSize="@dimen/px35"
+                    android:id="@+id/weibo"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px128"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="@dimen/px275"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/px39"
+                    android:text="@string/his_wx"
+                    android:textColor="#353535"
+                    android:textSize="@dimen/px35"
+                    />
+
+                <TextView
+                    android:layout_width="@dimen/px619"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="#919191"
+                    android:textSize="@dimen/px35"
+                    android:id="@+id/wx"
+                    />
+
+                <TextView
+                    android:layout_width="@dimen/px100"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/blue_common"
+                    android:textSize="@dimen/px35"
+                    android:id="@+id/copy_wx"
+                    android:text="@string/copy"
+                    android:layout_gravity="center_vertical"
+                    />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="@dimen/px259"
+                android:layout_height="@dimen/px259"
+                android:id="@+id/wx_qcode"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitXY"
+                />
+        </LinearLayout>
+    </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

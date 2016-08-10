@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.buluoxing.famous.mission.MissionSortActivity"
+    android:background="#80000000"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/shadow"
+        android:orientation="horizontal"
+        />
+    <LinearLayout
+        android:layout_width="@dimen/px505"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/sort_bg_bg"
+        android:layout_marginRight="@dimen/px43"
+        android:layout_marginTop="@dimen/px144"
+        android:id="@+id/sort_list"
+        android:paddingRight="0dp"
+        android:paddingLeft="@dimen/px30"
+        >
+
+    </LinearLayout>
+
+</RelativeLayout>

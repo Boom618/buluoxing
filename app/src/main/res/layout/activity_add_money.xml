@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.buluoxing.famous.user.AddMoneyActivity"
+    android:background="#ffffff"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px144"
+        android:background="@drawable/title_bar_line">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/money_add"
+            style="@style/TitleBarText"
+            />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/px143"
+            android:layout_height="@dimen/px143"
+            android:scaleType="fitXY"
+            android:src="@drawable/back" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="选择支付方式"
+        android:textSize="@dimen/px46"
+        android:textColor="#4b4b4b"
+        android:layout_marginTop="@dimen/px48"
+        android:paddingLeft="@dimen/px37"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px130"
+        android:background="@drawable/pay_ali_bg"
+        android:layout_marginTop="1px"
+        android:gravity="right"
+        android:id="@+id/select_ali"
+        >
+        <ImageView
+            android:layout_width="@dimen/px52"
+            android:layout_height="@dimen/px52"
+            android:id="@+id/select_status_ali"
+            android:layout_gravity="right|center_vertical"
+            android:background="@drawable/pay_selected"
+            android:layout_marginRight="@dimen/px73"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px115"
+        android:background="@drawable/pay_wx_bg"
+        android:gravity="right"
+        android:id="@+id/select_wx"
+        ><ImageView
+        android:layout_width="@dimen/px52"
+        android:layout_height="@dimen/px52"
+        android:id="@+id/select_status_wx"
+        android:layout_gravity="right|center_vertical"
+        android:background="@drawable/pay_diselect"
+        android:layout_marginRight="@dimen/px73"
+        /></LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px134"
+        android:background="@drawable/top_bottom_line"
+        android:layout_marginTop="@dimen/px37"
+        >
+        <TextView
+            android:layout_width="@dimen/px289"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/howmuch"
+            android:textColor="#46474a"
+            android:layout_marginLeft="@dimen/px43"
+            />
+        
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/EditorInputReal"
+            android:id="@+id/money"
+            android:inputType="numberDecimal"
+            android:background="@null"
+            />
+    </LinearLayout>
+    <Button
+        android:layout_width="@dimen/px936"
+        android:layout_height="@dimen/px140"
+        android:background="@drawable/radius_login"
+        android:text="@string/add_money"
+        android:textSize="@dimen/px46"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/px76"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/add_money"
+        />
+</LinearLayout>

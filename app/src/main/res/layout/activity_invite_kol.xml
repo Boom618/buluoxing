@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.buluoxing.famous.user.InviteKolActivity"
+    android:background="@color/main_bg"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px144"
+        android:background="@drawable/title_bar_line">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/invite_cooper"
+            android:textColor="#737373"
+            android:textSize="@dimen/px52"/>
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/px143"
+            android:layout_height="@dimen/px143"
+            android:scaleType="fitXY"
+            android:src="@drawable/back"/>
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/px88"
+        android:gravity="center_vertical"
+        >
+        <ImageView
+            android:layout_width="@dimen/px36"
+            android:layout_height="@dimen/px39"
+            android:background="@drawable/edit"
+            android:layout_marginLeft="@dimen/px46"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px46"
+            android:text="@string/cooper_detail"
+            android:textSize="@dimen/px40"
+            android:textColor="#919191"
+            />
+    </LinearLayout>
+    <EditText
+        android:layout_width="@dimen/px999"
+        android:layout_height="@dimen/px778"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/px29"
+        android:background="@drawable/radius_rect_white"
+        android:id="@+id/detail"
+        android:gravity="top"
+        android:minLines="6"
+        android:hint="(请告知：品牌，品类，预算，档期)"
+        style="@style/EditorInputReal"
+        android:padding="@dimen/px20"
+        />
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px141"
+        android:background="@color/blue_common"
+        android:text="@string/submit"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/px52"
+        android:id="@+id/submit"
+        />
+</RelativeLayout>

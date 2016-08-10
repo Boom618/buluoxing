@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f7fb"
+    android:orientation="vertical"
+    tools:context=".user.UserSetUpActivity">
+    <!--头部-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px144"
+        android:background="@drawable/title_bar_line">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/user_center"
+            android:textColor="#737373"
+            android:textSize="@dimen/px52"/>
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/px143"
+            android:layout_height="@dimen/px143"
+            android:scaleType="fitXY"
+            android:src="@drawable/back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px43"
+            android:text="@string/save"
+            android:textColor="#5e5e5e"
+            android:textSize="@dimen/px46"
+            android:id="@+id/save"
+            />
+
+    </RelativeLayout>
+
+
+    <!-- 上下两条线-->
+    <LinearLayout
+        android:id="@+id/edit_avatar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px215"
+        android:layout_marginTop="@dimen/px29"
+        android:background="@drawable/top_bottom_line"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            style="@style/EditorInputLeft"
+            android:layout_width="@dimen/px232"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/px32"
+            android:gravity="center_vertical"
+            android:text="@string/avatar"
+            />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_icon"
+            android:layout_width="@dimen/px158"
+            android:layout_height="@dimen/px158"
+            android:layout_gravity="center_vertical"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px23"
+        android:background="@drawable/top_bottom_line"
+        android:orientation="vertical"
+        >
+        <!--每一行-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px131"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/px32"
+                android:background="@drawable/top_bottom_line"
+                >
+
+                <TextView
+                    style="@style/EditorInputLeft"
+                    android:layout_width="@dimen/px232"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/nick_name"
+                    />
+
+                <com.diy.ContainsEmojiEditText
+                    android:id="@+id/nickname"
+                    style="@style/EditorInputReal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:maxLength="10"
+                    android:gravity="center_vertical"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px131"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                style="@style/EditorInputLeft"
+                android:layout_width="@dimen/px232"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/px32"
+                android:gravity="center_vertical"
+                android:text="@string/sex"
+                />
+
+            <com.diy.MyRadioGroup
+                android:id="@+id/sex_radio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                >
+
+
+            </com.diy.MyRadioGroup>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px131"
+                android:layout_marginLeft="@dimen/px32"
+                android:background="@drawable/top_bottom_line"
+                >
+                <TextView
+                    style="@style/EditorInputLeft"
+                    android:layout_width="@dimen/px232"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/birthday"
+                    />
+
+                <TextView
+                    style="@style/EditorInputReal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:id="@+id/select_birthday"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/change_password"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px131"
+                android:layout_marginLeft="@dimen/px32"
+                android:background="@drawable/top_bottom_line"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    style="@style/EditorInputReal"
+                    android:layout_width="@dimen/px910"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/change_password"
+                    />
+
+                <ImageView
+                    android:layout_width="@dimen/px121"
+                    android:layout_height="@dimen/px130"
+                    android:background="@drawable/go_right"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px132"
+        android:background="@drawable/top_bottom_line"
+        android:orientation="vertical"
+        >
+        <!--每一行-->
+        <TextView
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/logout"
+            android:textColor="#919191"
+            android:textSize="@dimen/px40"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

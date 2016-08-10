@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.buluoxing.famous.SelectTimeActivity"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px144"
+        android:background="@drawable/title_bar_line">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/select_time"
+            style="@style/TitleBarText"/>
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/px143"
+            android:layout_height="@dimen/px143"
+            android:scaleType="fitXY"
+            android:src="@drawable/back"/>
+
+    </RelativeLayout>
+    <DatePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/datePicker"
+        android:calendarViewShown="false"
+        android:layout_gravity="center_horizontal"
+        />
+    <TimePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/timePicker"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <Button
+        android:id="@+id/select_time"
+        android:layout_width="@dimen/px867"
+        android:layout_height="@dimen/px131"
+        android:layout_marginTop="@dimen/px108"
+        android:textSize="@dimen/px46"
+        android:textColor="#ffffff"
+        android:text="@string/yes"
+        android:background="@drawable/radius_login"
+        android:layout_gravity="center_horizontal"
+        />
+</LinearLayout>

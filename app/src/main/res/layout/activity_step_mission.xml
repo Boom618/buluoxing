@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.buluoxing.famous.tips.StepMissionActivity"
+    android:background="@drawable/step_mission"
+    >
+    <Button
+        android:layout_width="@dimen/px303"
+        android:layout_height="@dimen/px159"
+        android:layout_marginLeft="@dimen/px756"
+        android:layout_marginTop="@dimen/px156"
+        android:background="@null"
+        android:id="@+id/step_share"
+        />
+    <ImageView
+        android:layout_width="@dimen/px49"
+        android:layout_height="@dimen/px49"
+        android:background="@drawable/close_tips"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/px40"
+        android:layout_marginTop="@dimen/px40"
+        android:id="@+id/back"
+        />
+</RelativeLayout>

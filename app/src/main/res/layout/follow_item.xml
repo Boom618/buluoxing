@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+    >
+    <RelativeLayout
+        android:layout_width="@dimen/px135"
+        android:layout_height="@dimen/px135"
+        android:layout_marginLeft="@dimen/px43"
+        android:layout_marginTop="@dimen/px43"
+        >
+        <ImageView
+            android:layout_width="@dimen/px135"
+            android:layout_height="@dimen/px135"
+            android:background="@null"
+            android:id="@+id/user_icon"
+            android:scaleType="fitXY"
+            />
+        <ImageView
+            android:layout_width="@dimen/px135"
+            android:layout_height="@dimen/px135"
+            android:background="@drawable/user_icon_cover"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            >
+            <ImageView
+                android:id="@+id/kol"
+                android:layout_width="@dimen/px101"
+                android:layout_height="@dimen/px43"
+                android:src="@drawable/kol"
+                />
+            <ImageView
+                android:id="@+id/kol_single"
+                android:layout_width="@dimen/px101"
+                android:layout_height="@dimen/px43"
+                android:src="@drawable/kol_single"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#565656"
+            android:textSize="@dimen/px40"
+            android:layout_marginLeft="@dimen/px24"
+            android:id="@+id/username"
+            android:text=""
+            android:layout_marginTop="@dimen/px68"
+            />
+
+        <TextView
+            android:layout_width="@dimen/px824"
+            android:layout_height="@dimen/px98"
+            android:layout_alignLeft="@+id/username"
+            android:layout_below="@+id/username"
+            android:layout_marginTop="@dimen/px24"
+            android:text=""
+            android:textColor="#565656"
+            android:textSize="@dimen/px40"
+            android:id="@+id/date"
+            />
+        
+
+        <ImageView
+            android:layout_width="@dimen/px158"
+            android:layout_height="@dimen/px130"
+            android:src="@drawable/follow"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/px79"
+            android:layout_marginRight="@dimen/px76"
+            android:id="@+id/follow_btn"
+            android:scaleType="fitCenter"
+            />
+
+    </RelativeLayout>
+</LinearLayout>

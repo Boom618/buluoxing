@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.buluoxing.famous.ConfirmActivity"
+    android:orientation="vertical"
+    android:background="#0D000000"
+    android:gravity="center"
+    >
+    <LinearLayout
+        android:layout_width="@dimen/px773"
+        android:layout_height="@dimen/px336"
+        android:background="@drawable/more_money_bg"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px181"
+            android:text="@string/report_this_guy"
+            android:gravity="center"
+            android:textSize="@dimen/px52"
+            android:textColor="#8f9194"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/px40"
+                android:textColor="#ffffff"
+                android:id="@+id/yes"
+                android:text="@string/yes"
+                android:gravity="center"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/px40"
+                android:textColor="#46474a"
+                android:id="@+id/cancel"
+                android:text="@string/cancel"
+                android:gravity="center"
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_width="@dimen/px100"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+</LinearLayout>

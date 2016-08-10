@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="btn_blue">#65dee7</color>
+    <color name="input_gray">#eff1f4</color>
+    <color name="input_hint_color">#b1b3b6</color>
+    <color name="black_gray">#616164</color>
+    <color name="main_bg">#f6f7fb</color>
+    <color name="blue_common">#4cdae4</color>
+    <color name="navpage">#FFE1E8EB</color>
+
+    <color name="black">#000000</color>
+
+    <color name="tranBlackDark">#66000000</color>
+    <color name="tranBlackLight">#22000000</color>
+
+
+    <!-- 列表中的Item正常和按下状态的背景颜色 -->
+    <color name="df_table_item_bgcolor_normal">#FFFFFFFF</color>
+    <color name="df_table_item_bgcolor_pressed">#DDF3FF</color>
+
+</resources>

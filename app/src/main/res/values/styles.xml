@@ -1,0 +1,209 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="FeelyouWindowAnimTheme" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/in_from_left</item>
+        <!--<item name="android:activityOpenExitAnimation">@anim/out_from_left</item>-->
+        <!--<item name="android:activityCloseEnterAnimation">@anim/in_from_left</item>-->
+        <item name="android:activityCloseExitAnimation">@anim/out_from_left</item>
+    </style>
+
+
+
+
+
+    <style name="AnimActivityTheme">
+        <item name="android:windowAnimationStyle">@style/FeelyouWindowAnimTheme</item>
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+        <item name="android:windowBackground">@color/transparent_black</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+
+
+    <style name="EditorInputLeft">
+        <item name="android:textColor">#c2c2c2</item>
+        <item name="android:textSize">@dimen/px40</item>
+        <item name="android:maxLength">20</item>
+    </style>
+
+    <style name="EditorInputReal">
+        <item name="android:textColor">#474747</item>
+        <item name="android:textSize">@dimen/px40</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:textColorHint">#b7b9bc</item>
+        <item name="android:maxLength">20</item>
+    </style>
+    <style name="TitleBarText">
+        <item name="android:textColor">#5e5e5e</item>
+        <item name="android:textSize">@dimen/px52</item>
+    </style>
+    <style name="MissonDetailText">
+        <item name="android:textColor">#565656</item>
+        <item name="android:textSize">@dimen/px35</item>
+    </style>
+
+
+    <style name="UserCenterLine">
+        <item name="android:layout_height">@dimen/px131</item>
+    </style>
+
+    <style name="LineHorDeep">
+        <item name="android:layout_height">1px</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">#e2e2e5</item>
+    </style>
+
+    <style name="LineHorShallow">
+        <item name="android:layout_height">1px</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">#ebebee</item>
+    </style>
+
+    <style name="RedBigNumber">
+        <item name="android:textColor">#fd444f</item>
+        <item name="android:textSize">@dimen/px58</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="SelectArea">
+        <item name="android:textColor">@color/blue_common</item>
+        <item name="android:textSize">@dimen/px40</item>
+        <item name="android:layout_width">@dimen/px222</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Transparent">
+        <item name="android:windowBackground">@color/transparent_black</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <color name="transparent_black">#00000000</color>
+
+    <!-- Navigation Header -->
+    <style name="NavPage">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+        <!-- <item name="android:background">@drawable/nav_page</item> -->
+        <item name="android:background">@color/navpage</item>
+    </style>
+
+    <style name="loadingDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!--  1.0版 新加-->
+
+    <!-- HDialogBuilder light-->
+    <style name="hd_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:backgroundDimAmount">0.4</item>
+    </style>
+
+    <!-- HDialogBuilder dim-->
+    <style name="hd_dialog_dim" parent="hd_dialog">
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!-- 相机和相册 Dialog  Style-->
+    <style name="bottom_dialog_button_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dip</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <!--调用相机 相册动画 Style-->
+    <style name="personal_info_bottom_dialog" parent="android:Animation">
+        <!-- 进入时的动画 -->
+        <item name="@android:windowEnterAnimation">@anim/dialog_in</item>
+        <!-- 退出时的动画 -->
+        <item name="@android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+
+    <!-- 个人中心 列表 图片 Style-->
+    <style name="user_info_image">
+        <item name="android:layout_width">@dimen/px35</item>
+        <item name="android:layout_height">@dimen/px36</item>
+        <item name="android:layout_marginLeft">@dimen/px26</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <!-- 个人中心 列表 文字 Style-->
+    <style name="user_info_text">
+        <item name="android:layout_width">@dimen/px864</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">#343434</item>
+        <item name="android:textSize">@dimen/px40</item>
+    </style>
+
+    <!-- 个人中心 列表 文字 Style-->
+    <style name="user_info_text_four">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/px131</item>
+        <item name="android:layout_marginLeft">@dimen/px89</item>
+        <item name="android:textColor">#343434</item>
+        <item name="android:textSize">@dimen/px40</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+
+    <!-- 个人中心 列表 客服和更新布局 Style-->
+    <style name="user_info_online_update">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/px131</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:layout_marginBottom">@dimen/px36</item>
+    </style>
+
+
+
+
+
+</resources>

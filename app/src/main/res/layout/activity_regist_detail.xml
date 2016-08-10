@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="com.buluoxing.famous.RegistActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px144"
+        android:background="@drawable/title_bar_line">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/regist"
+            android:textColor="#737373"
+            android:textSize="@dimen/px52" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/px143"
+            android:layout_height="@dimen/px143"
+            android:scaleType="fitXY"
+            android:src="@drawable/back" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/px867"
+        android:layout_height="@dimen/px131"
+        android:layout_gravity="center"
+        android:background="@drawable/radius_rect"
+        android:layout_marginTop="@dimen/px89"
+        android:id="@+id/select_birthday"
+        >
+
+        <TextView
+            android:layout_width="@dimen/px235"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/birthday"
+            android:textColor="@color/input_hint_color"
+            android:textSize="@dimen/px40"
+            />
+
+        <TextView
+            android:layout_width="@dimen/px397"
+            android:layout_height="match_parent"
+            android:text="@string/birthday_default"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="@dimen/px40"
+            android:id="@+id/date_view"
+            />
+        <ImageView
+            android:layout_width="@dimen/px32"
+            android:layout_height="@dimen/px27"
+            android:src="@drawable/down"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/px138"
+            />
+        
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="@dimen/px867"
+        android:layout_height="@dimen/px131"
+        android:layout_gravity="center"
+        android:background="@drawable/radius_rect"
+        android:layout_marginTop="@dimen/px89"
+        >
+
+        <TextView
+            android:layout_width="@dimen/px86"
+            android:layout_height="match_parent"
+            android:text="@string/sex"
+            android:gravity="center_vertical"
+            android:textColor="@color/input_hint_color"
+            android:textSize="@dimen/px40"
+            android:layout_marginLeft="@dimen/px42"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/px184"
+            android:id="@+id/radio_boy"
+            >
+            <ImageView
+                android:layout_width="@dimen/px36"
+                android:layout_height="@dimen/px36"
+                android:src="@drawable/radio_select"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/image_boy"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/boy"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/px36"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/px111"
+            android:id="@+id/radio_girl"
+            >
+            <ImageView
+                android:layout_width="@dimen/px36"
+                android:layout_height="@dimen/px36"
+                android:src="@drawable/radio_unselect"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/image_girl"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/girl"
+                android:layout_marginLeft="@dimen/px36"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/invit_code"
+        android:layout_width="@dimen/px867"
+        android:layout_height="@dimen/px131"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/px40"
+        android:autoText="false"
+        android:background="@drawable/radius_rect"
+        android:hint="@string/invit_code_tips"
+        android:paddingLeft="@dimen/px45"
+        android:textColorHint="#b1b3b6"
+        android:textSize="@dimen/px40"
+        android:textColor="#000000"
+        android:textCursorDrawable="@null"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/px50"
+        >
+        <ImageView
+            android:layout_width="@dimen/px49"
+            android:layout_height="@dimen/px49"
+            android:background="@drawable/check"
+            android:id="@+id/checkbox"
+            />
+        <TextView
+            android:id="@+id/is_agree"
+            android:layout_width="@dimen/px867"
+            android:layout_height="wrap_content"
+            android:text="@string/i_agree"
+            android:textColor="#67baff"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/go_regist"
+        android:layout_width="@dimen/px867"
+        android:layout_height="@dimen/px131"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/px206"
+        android:background="@drawable/radius_login"
+        android:text="@string/regist"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/px46"
+
+        />
+
+</LinearLayout>

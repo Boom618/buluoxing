@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mission.MissionStatusActivity"
+    android:orientation="vertical"
+    android:background="@color/main_bg"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px144"
+        android:background="@drawable/title_bar_line">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/misson_detail"
+            style="@style/TitleBarText"
+            />
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/px143"
+            android:layout_height="@dimen/px143"
+            android:scaleType="fitXY"
+            android:src="@drawable/back" />
+    </RelativeLayout>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/px100"-->
+        <!--android:background="@drawable/title_bar_line"-->
+        <!--android:orientation="horizontal"-->
+        <!--&gt;-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:text="@string/mission_request"-->
+            <!--android:textColor="#4b4b4b"-->
+            <!--android:textSize="@dimen/px40"-->
+            <!--/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/mission_request"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:text=""-->
+            <!--android:textColor="#4b4b4b"-->
+            <!--android:textSize="@dimen/px40"-->
+            <!--/>-->
+    <!--</LinearLayout>-->
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/px100"-->
+        <!--android:background="@drawable/title_bar_line"-->
+        <!--android:orientation="horizontal"-->
+        <!--&gt;-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:text="任务类型："-->
+            <!--android:textColor="#4b4b4b"-->
+            <!--android:textSize="@dimen/px40"-->
+            <!--/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/mission_type"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:text=""-->
+            <!--android:textColor="#4b4b4b"-->
+            <!--android:textSize="@dimen/px40"-->
+            <!--/>-->
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px100"
+        android:background="@drawable/title_bar_line"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/px40"
+            android:textColor="#4b4b4b"
+            android:text="@string/mission_rewards"
+            android:layout_gravity="center_vertical"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/px40"
+            android:textColor="#fd444f"
+            android:text="100元"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px602"
+        android:background="#ffffff"
+        >
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px104"
+        android:background="@drawable/top_bottom_line"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f6f7fb"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/px43"
+            android:text="@string/user_complete_list"
+            android:textColor="#565656"
+            android:textSize="@dimen/px40"
+            />
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/completed_user_list"
+        android:background="#ffffff"
+        android:divider="@null"
+        ></ListView>
+</LinearLayout>

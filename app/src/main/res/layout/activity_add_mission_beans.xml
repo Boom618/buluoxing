@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.buluoxing.famous.user.AddMissionBeansActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="@dimen/px726"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px111"
+            android:background="@drawable/mission_add_top_bg"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="追加红豆任务"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/px40"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/total_spend"
+                style="@style/EditorInputReal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/px69"
+                android:text="任务奖励，本次任务共消费0红豆"
+                android:maxLength="50"
+                />
+
+            <LinearLayout
+                android:layout_width="@dimen/px636"
+                android:layout_height="@dimen/px376"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/px30"
+                android:background="@drawable/input_number_bg"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/px56"
+                android:paddingTop="@dimen/px56"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/EditorInputReal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="追加"
+                        />
+
+                    <EditText
+                        android:id="@+id/mission_number"
+                        style="@style/EditorInputReal"
+                        android:layout_width="@dimen/px280"
+                        android:layout_height="@dimen/px94"
+                        android:background="@drawable/input_number_bg"
+                        android:hint="输入可领取人数"
+                        android:inputType="number"
+                        android:gravity="center"
+                        />
+
+                    <TextView
+                        style="@style/EditorInputReal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="人可领"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/EditorInputReal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px30"
+                    android:gravity="center"
+                    android:text="任务结束时间"
+                    />
+
+                <TextView
+                    android:id="@+id/end_time"
+                    style="@style/EditorInputReal"
+                    android:layout_width="@dimen/px527"
+                    android:layout_height="@dimen/px94"
+                    android:layout_marginTop="@dimen/px30"
+                    android:background="@drawable/input_number_bg"
+                    android:gravity="center"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tips"
+                style="@style/EditorInputReal"
+                android:layout_width="@dimen/px636"
+                android:layout_height="@dimen/px122"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical"
+                android:text="每次任务最低消费10红豆"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px150"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/addadd"
+                    android:layout_width="@dimen/px310"
+                    android:layout_height="@dimen/px102"
+                    android:background="@drawable/radius_login"
+                    android:gravity="center"
+                    android:text="追加红豆任务"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/px40"
+                    />
+
+                <TextView
+                    android:id="@+id/cancel"
+                    android:layout_width="@dimen/px154"
+                    android:layout_height="@dimen/px102"
+                    android:layout_marginLeft="@dimen/px30"
+                    android:background="@drawable/radius_rect"
+                    android:gravity="center"
+                    android:text="@string/cancel"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/px40"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

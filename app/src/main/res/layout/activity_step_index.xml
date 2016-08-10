@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.buluoxing.famous.tips.StepIndexActivity"
+    android:background="@drawable/step_index"
+    >
+    <ImageView
+        android:layout_width="@dimen/px348"
+        android:layout_height="@dimen/px125"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/px744"
+        android:background="@drawable/step_next"
+        android:id="@+id/step_next"
+        />
+    <ImageView
+        android:layout_width="@dimen/px49"
+        android:layout_height="@dimen/px49"
+        android:background="@drawable/close_tips"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/px40"
+        android:layout_marginTop="@dimen/px40"
+        android:id="@+id/back"
+        />
+</RelativeLayout>

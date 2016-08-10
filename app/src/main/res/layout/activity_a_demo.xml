@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/id_dialog1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dialog1"/>
+
+    <Button
+        android:id="@+id/id_dialog2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dialog2"/>
+
+    <Button
+        android:id="@+id/id_dialog3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dialog3"/>
+
+    <Button
+        android:id="@+id/id_dialog4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dialog4"/>
+
+    <Button
+        android:id="@+id/id_dialog5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button5"/>
+
+    <TextView
+        android:id="@+id/id_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="当前时间"/>
+
+
+    // --
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/id_group"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="红包类型"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RadioButton
+            android:id="@+id/id_ave"
+            android:text="平分红包"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RadioButton
+            android:id="@+id/id_random"
+            android:text="随机红包"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RadioGroup>
+
+
+    <TextView
+        android:text="领域："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.buluoxing.famous.view.FlowLayout
+        
+        android:id="@+id/id_isFlow"
+        android:background="#E5E5F5"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.buluoxing.famous.view.FlowLayout>
+
+    <com.buluoxing.famous.view.FlowLayout
+        android:id="@+id/id_flow"
+        android:background="#E5E5F5"
+        android:padding="20dp"
+        android:layout_marginTop="@dimen/px50"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.buluoxing.famous.view.FlowLayout>
+
+
+</LinearLayout>

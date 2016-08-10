@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical"
+    tools:context="com.buluoxing.famous.kol.FilterActivity"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px144"
+        android:background="@drawable/title_bar_line">
+
+        <TextView
+            style="@style/TitleBarText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="网红筛选"
+            />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/px143"
+            android:layout_height="@dimen/px143"
+            android:scaleType="fitXY"
+            android:src="@drawable/blue_close"
+
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px122"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/domain_maohao"
+            android:layout_marginLeft="@dimen/px42"
+            style="@style/EditorInputReal"
+            android:layout_gravity="center_vertical"
+            />
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/area_list"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:orientation="horizontal"-->
+            <!--/>-->
+        <com.buluoxing.famous.view.FlowLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/area_list"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            />
+    </LinearLayout>
+
+    <com.diy.AutoNewLineLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/all_domain_list"
+        android:background="#ffffff"
+        />
+    <LinearLayout
+        style="@style/LineHorDeep"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:paddingTop="@dimen/px30"
+        android:paddingBottom="@dimen/px30"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:paddingLeft="@dimen/px42"
+            android:text="城市："
+            android:textColor="#919191"
+            android:textSize="@dimen/px40"
+            />
+        <LinearLayout
+            android:id="@+id/select_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:orientation="vertical"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/LineHorDeep"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:id="@+id/province_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                ></LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/yes"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/px141"
+            android:layout_weight="1"
+            android:background="#4cdae4"
+            android:gravity="center"
+            android:text="@string/yes"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/px52"
+            />
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/px141"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="@string/reset"
+            android:textColor="#777777"
+            android:textSize="@dimen/px52"
+            />
+    </LinearLayout>
+</LinearLayout>

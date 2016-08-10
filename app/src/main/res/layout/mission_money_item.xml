@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/px58"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="@dimen/px995"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px144"
+                android:text=""
+                android:textColor="#565656"
+                android:textSize="@dimen/px35"
+                />
+
+            <TextView
+                android:id="@+id/area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#919296"
+                android:textSize="@dimen/px29"
+
+                />
+
+            <ImageView
+                android:layout_width="@dimen/px23"
+                android:layout_height="@dimen/px29"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/px17"
+                android:src="@drawable/position"
+                android:visibility="gone"
+
+                />
+
+            <TextView
+                android:id="@+id/city"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px13"
+                android:layout_weight="1"
+                android:text="北京"
+                android:textColor="#919296"
+                android:textSize="@dimen/px29"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/px35"
+                android:layout_height="@dimen/px35"
+                android:background="@drawable/blue_clock"
+                />
+
+            <TextView
+                android:id="@+id/complete_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px17"
+                android:text="4月20日-4月21日"
+                android:textColor="#ff0000"
+                android:textSize="@dimen/px35"
+
+                />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/px995"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/px21"
+            android:background="@drawable/radius_gray_rect"
+            >
+
+            <LinearLayout
+                android:layout_width="@dimen/px995"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/px20"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/px20"
+                android:paddingLeft="@dimen/px37"
+                android:paddingTop="@dimen/px50"
+                >
+
+                <TextView
+                    android:id="@+id/mission_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/px75"
+                    android:text=""
+                    android:textColor="#565656"
+                    android:textSize="@dimen/px40"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    >
+
+                    <TextView
+                        style="@style/MissonDetailText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mission_href"
+                        />
+
+                    <TextView
+                        android:id="@+id/mission_href"
+                        style="@style/MissonDetailText"
+                        android:layout_width="@dimen/px677"
+                        android:layout_height="@dimen/px79"
+                        android:text=""
+
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/row_mission_require"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        style="@style/MissonDetailText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="任务要求："
+                        />
+
+                    <TextView
+                        android:id="@+id/mission_request"
+                        style="@style/MissonDetailText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_over"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/MissonDetailText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="任务类型："
+                        />
+
+                    <TextView
+                        android:id="@+id/mission_type"
+                        style="@style/MissonDetailText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="0px"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            style="@style/MissonDetailText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/money_remain"
+                            />
+                        <TextView
+                            android:id="@+id/awards_beans_number"
+                            style="@style/RedBigNumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/px10"
+                            android:text=""
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/px10"
+                            android:text="@string/yuan"
+                            android:textColor="#ff0000"
+                            android:textSize="@dimen/px35"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal"
+                        >
+
+                        <ImageView
+                            android:layout_width="@dimen/px49"
+                            android:layout_height="@dimen/px49"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/remain"
+                            />
+
+                        <TextView
+                            android:id="@+id/remian_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/px10"
+                            android:text="0"
+                            android:textColor="#fd444f"
+                            android:textSize="@dimen/px40"
+                            android:textStyle="italic"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/px10"
+                            android:text="@string/number"
+                            android:textColor="#5e5e5e"
+                            android:textSize="@dimen/px35"
+                            />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/upload_image_now"
+                        android:layout_width="@dimen/px265"
+                        android:layout_height="@dimen/px82"
+                        android:background="@drawable/gogogo"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/px107"
+                        android:text="@string/touch_me_for_money"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/px35"
+                        android:layout_marginRight="@dimen/px30"
+                        android:layout_marginLeft="@dimen/px10"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/isfinished"
+                android:layout_width="@dimen/px150"
+                android:layout_height="@dimen/px147"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/right_top_mission"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/user_icon"
+        android:layout_width="@dimen/px130"
+        android:layout_height="@dimen/px130"
+        android:layout_marginLeft="@dimen/px43"
+        android:layout_marginTop="@dimen/px30"
+        android:scaleType="fitXY"
+        />
+
+    <ImageView
+        android:layout_width="@dimen/px130"
+        android:layout_height="@dimen/px130"
+        android:layout_marginLeft="@dimen/px43"
+        android:layout_marginTop="@dimen/px30"
+        android:background="@drawable/mission_icon_cover"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/user_icon"
+        android:layout_alignRight="@+id/user_icon"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/kol"
+            android:layout_width="@dimen/px101"
+            android:layout_height="@dimen/px43"
+            android:src="@drawable/kol"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/kol_single"
+            android:layout_width="@dimen/px101"
+            android:layout_height="@dimen/px43"
+            android:src="@drawable/kol_single"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

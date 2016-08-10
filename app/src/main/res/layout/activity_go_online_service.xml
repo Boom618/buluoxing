@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="com.buluoxing.famous.user.GoOnlineService">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/px143"
+            android:layout_height="@dimen/px143"
+            android:scaleType="fitXY"
+            android:src="@drawable/back"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px143"
+            android:layout_marginBottom="@dimen/px30"
+            android:gravity="center"
+            android:text="@string/onlineService"
+            android:textColor="#737373"
+            android:textSize="@dimen/px52"/>
+    </RelativeLayout>
+
+    <!--  原 ScrollView 布局 -->
+    <!--<FrameLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/px20"
+                android:layout_marginTop="@dimen/px10"
+                android:src="@drawable/os1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="请复制部落星微信公众号ID,在微信端搜索并关注部落星"
+                android:textSize="@dimen/px40"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px550"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/px20"
+                android:layout_marginTop="@dimen/px20"
+                android:scaleType="center"
+                android:src="@drawable/ost1"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/px15"
+                >
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:text="部落星ID："
+                    android:textSize="@dimen/px40"/>
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignBottom="@+id/textView"
+                    android:layout_centerHorizontal="true"
+                    android:text="tribal-star"
+                    android:textColor="#40DBD5"
+                    android:textSize="@dimen/px40"/>
+
+                <Button
+                    android:id="@+id/goOnlineServiceButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="复制"
+                    android:textColor="#40DBD5"
+                    android:textSize="@dimen/px40"/>
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/px20"
+                android:layout_marginTop="@dimen/px30"
+                android:src="@drawable/os2"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="进入部落星公众号，点击菜单栏【联系我们】联系客服"
+                android:textSize="@dimen/px40"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px550"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/px20"
+                android:layout_marginTop="@dimen/px20"
+                android:scaleType="center"
+                android:src="@drawable/ost2"/>
+        </LinearLayout>
+    <!--</FrameLayout>-->
+</LinearLayout>

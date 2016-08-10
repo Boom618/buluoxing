@@ -1,0 +1,213 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".index.IndexFragment">
+    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px144"
+        android:background="@drawable/title_bar_line"
+        >
+        <RelativeLayout
+            android:layout_width="@dimen/px144"
+            android:layout_height="match_parent"
+            android:id="@+id/show_left_list"
+            >
+            <ImageView
+                android:layout_width="@dimen/px53"
+                android:layout_height="@dimen/px45"
+                android:background="@drawable/left_list"
+                android:layout_centerInParent="true"
+                />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/buluoxing"
+            style="@style/TitleBarText"/>
+    </RelativeLayout>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/swipe_container"
+            >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px357">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/top_image_loop"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/px357"
+                        >
+                    </android.support.v4.view.ViewPager>
+
+                    <LinearLayout
+                        android:id="@+id/dot_list"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/top_image_loop"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="@dimen/px19"
+                        android:orientation="horizontal"
+                        >
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px190"
+                    android:background="@drawable/index_ad"
+                    android:orientation="horizontal"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:id="@+id/sign_in"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/sign_info"
+                            android:textSize="@dimen/px35"
+                            android:textColor="#5e5e5e"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="@dimen/px40"
+                            android:layout_marginBottom="@dimen/px35"
+                            />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:id="@+id/invite_friends"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px115"
+                    android:background="@drawable/top_line"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/px29"
+                    >
+
+                    <ImageView
+                        android:layout_width="@dimen/px40"
+                        android:layout_height="@dimen/px36"
+                        android:layout_marginLeft="@dimen/px55"
+                        android:background="@drawable/honor"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/px19"
+                        android:layout_weight="1"
+                        android:text="@string/hot_kol"
+                        android:textColor="#474747"
+                        android:textSize="@dimen/px40"
+                        />
+
+                    <TextView
+                        android:layout_width="@dimen/px206"
+                        android:layout_height="wrap_content"
+                        android:text="@string/go_detail"
+                        android:textColor="#fd444f"
+                        android:id="@+id/more_kol"
+                        android:textSize="@dimen/px40"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/hot_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px274"
+                    android:background="#ffffff"
+                    android:gravity="top"
+                    android:orientation="horizontal"
+
+                    >
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px105"
+                    android:background="@drawable/top_line"
+                    android:layout_marginTop="@dimen/px19"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hot_mission"
+                        android:textColor="#474747"
+                        android:textSize="@dimen/px40"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/px55"
+                        />
+
+                    <TextView
+                        android:layout_width="@dimen/px206"
+                        android:layout_height="wrap_content"
+                        android:text="@string/find_more"
+                        android:textSize="@dimen/px40"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="#fd444f"
+                        android:id="@+id/find_more_mission"
+                        />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/beans_mission_container"
+                    android:orientation="vertical"
+                    android:background="#ffffff"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/loading"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="@dimen/px40"
+                    style="@style/EditorInputReal"
+                    android:id="@+id/loading_text"
+                    />
+
+            </LinearLayout>
+        </ScrollView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+
+</FrameLayout>

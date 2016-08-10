@@ -1,0 +1,5 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/bottom_index" android:state_selected="true"/>
+    <item android:drawable="@drawable/bottom_index_gray"/>
+</selector>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/main_bg"
+    tools:context="com.buluoxing.famous.user.AreaActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px144"
+        android:background="@drawable/title_bar_line">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/area"
+            style="@style/TitleBarText"/>
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/px143"
+            android:layout_height="@dimen/px143"
+            android:scaleType="fitXY"
+            android:src="@drawable/back"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px43"
+            android:textSize="@dimen/px46"
+            android:text="@string/save"
+            android:textColor="#5e5e5e"
+            android:id="@+id/save"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px150"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        >
+        <TextView
+        android:layout_width="@dimen/px196"
+        android:layout_height="wrap_content"
+        android:textColor="#565656"
+        android:textSize="@dimen/px40"
+        android:text="@string/area_maohao"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="@dimen/px43"
+        />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:id="@+id/area_selected"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/area_list"
+        android:background="#ffffff"
+        >
+
+    </LinearLayout>
+
+</LinearLayout>

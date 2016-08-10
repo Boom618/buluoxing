@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.buluoxing.famous.ImageListActivity"
+    android:background="#cc000000"
+    >
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/image_list"
+        >
+    </android.support.v4.view.ViewPager>
+
+    <Button
+        android:layout_width="@dimen/px150"
+        android:layout_height="@dimen/px75"
+        android:text="保存"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/px100"
+        android:layout_marginBottom="@dimen/px100"
+        android:background="@drawable/kol_detail_follow_bg"
+        android:textColor="#ffffff"
+        android:id="@+id/save"
+        android:textSize="@dimen/px29"
+        />
+</RelativeLayout>

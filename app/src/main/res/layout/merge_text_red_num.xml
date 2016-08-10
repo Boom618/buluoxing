@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 任务红包剩余数量-->
+    <TextView
+        android:id="@+id/num_surplus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/px40"
+        android:drawableLeft="@drawable/remain"
+        android:text="0个"
+        android:textColor="#fd444f"
+        android:textSize="@dimen/px40"/>
+</merge>

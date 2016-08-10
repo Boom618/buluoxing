@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.buluoxing.famous.GetMoneyPackageActivity"
+    android:background="#80000000"
+    >
+    <ImageView
+        android:id="@+id/get_package"
+        android:layout_width="@dimen/px860"
+        android:layout_height="@dimen/px998"
+        android:background="@drawable/get_package"
+        android:layout_marginLeft="@dimen/px117"
+        android:layout_marginTop="@dimen/px432"
+        />
+    <ImageView
+        android:layout_width="@dimen/px99"
+        android:layout_height="@dimen/px99"
+        android:background="@drawable/package_close"
+        android:layout_alignTop="@+id/get_package"
+        android:layout_alignRight="@+id/get_package"
+        android:layout_marginTop="@dimen/px105"
+        android:layout_marginRight="@dimen/px40"
+        />
+    <Button
+        android:layout_width="@dimen/px541"
+        android:layout_height="@dimen/px121"
+        android:background="@drawable/yellow_btn"
+        android:layout_alignBottom="@+id/get_package"
+        android:layout_centerHorizontal="true"
+        android:layout_alignLeft="@+id/get_package"
+        android:layout_marginLeft="@dimen/px150"
+        android:layout_marginBottom="@dimen/px115"
+        android:text="@string/get_money_now"
+        android:textColor="#ff2d4c"
+        android:textSize="@dimen/px40"
+        android:id="@+id/open_money_package"
+        />
+</RelativeLayout>

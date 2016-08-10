@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.buluoxing.famous.user.BeansGetMoneyResultActivity"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px144"
+        android:background="@drawable/title_bar_line"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/package_result"
+            style="@style/TitleBarText"/>
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/px143"
+            android:layout_height="@dimen/px143"
+            android:scaleType="fitXY"
+            android:src="@drawable/back" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/package_result"
+        >
+        <LinearLayout
+            android:layout_width="@dimen/px104"
+            android:layout_height="@dimen/px104"
+            android:layout_marginRight="@dimen/px141"
+            android:layout_marginTop="@dimen/px465"
+            android:layout_alignParentRight="true"
+            android:id="@+id/close"
+            android:orientation="horizontal"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal|bottom"
+            android:layout_marginTop="@dimen/px590"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="@dimen/px104"
+                android:textColor="#ae0125"
+                android:id="@+id/how_much"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yuan"
+                android:textSize="@dimen/px40"
+                android:textColor="#ae0125"
+                />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/px46"
+            android:textColor="#fceb55"
+            android:layout_marginTop="@dimen/px935"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/message"
+            />
+
+        <TextView
+            android:layout_width="@dimen/px439"
+            android:layout_height="@dimen/px115"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/px390"
+            android:background="@drawable/radius_yellow"
+            android:layout_centerHorizontal="true"
+            android:text="立即查看"
+            android:textColor="#ff2d4c"
+            android:gravity="center"
+            android:textSize="@dimen/px40"
+            android:id="@+id/find_detail"
+            />
+
+    </RelativeLayout>
+</LinearLayout>

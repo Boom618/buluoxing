@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical"
+    tools:context=".user.MissionCompleteStatusActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px144"
+        android:background="@drawable/title_bar_line">
+
+        <TextView
+            style="@style/TitleBarText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/mission_detail"/>
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/px143"
+            android:layout_height="@dimen/px143"
+            android:scaleType="fitXY"
+            android:src="@drawable/back"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollY="0px"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/id_mission_title"
+                android:layout_width="match_parent"
+                android:textSize="@dimen/px50"
+                android:text="标题"
+                android:textColor="#4b4b4b"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px100"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/mission_request"
+                    android:textColor="#4b4b4b"
+                    android:textSize="@dimen/px40"
+                    />
+
+                <TextView
+                    android:id="@+id/mission_request"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text=""
+                    android:textColor="#4b4b4b"
+                    android:textSize="@dimen/px40"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px100"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="任务类型："
+                    android:textColor="#4b4b4b"
+                    android:textSize="@dimen/px40"
+                    />
+
+                <TextView
+                    android:id="@+id/mission_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text=""
+                    android:textColor="#4b4b4b"
+                    android:textSize="@dimen/px40"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px100"
+                android:orientation="horizontal"
+                >
+
+                <!--android:layout_marginLeft="@dimen/px37"-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="该任务总报酬为："
+                    android:textColor="#4b4b4b"
+                    android:textSize="@dimen/px40"
+                    />
+
+                <TextView
+                    android:id="@+id/get_what"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text=""
+                    android:textColor="#fd444f"
+                    android:textSize="@dimen/px40"
+                    />
+
+                <include layout="@layout/merge_text_red_num"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sample_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px109"
+                android:background="#f6f7fb"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/px42"
+                android:text="@string/completed_person"
+                android:textSize="@dimen/px40"
+                />
+
+            <!--只是为了画条线-->
+            <LinearLayout
+                style="@style/LineHorDeep"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                />
+
+            <com.diy.MyListView
+                android:id="@+id/completed_user_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="#eff1f4"
+                android:dividerHeight="1px"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+
+                >
+            </com.diy.MyListView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

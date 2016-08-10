@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+    >
+    <ImageView
+        android:layout_width="@dimen/px37"
+        android:layout_height="@dimen/px37"
+        android:background="@drawable/radio_unselect"
+        android:id="@+id/radio_image"
+        android:layout_gravity="center_vertical"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radio_text"
+        android:layout_marginLeft="@dimen/px37"
+        android:textColor="#5e5e5e"
+        android:textSize="@dimen/px40"
+        android:layout_gravity="center_vertical"
+        />
+</LinearLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="@dimen/px995"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/px39"
+            android:background="@drawable/radius_gray_rect"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/px37"
+            android:paddingTop="@dimen/px50"
+            android:paddingBottom="@dimen/px50"
+            android:layout_centerHorizontal="true"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/mission_title"
+                        android:layout_width="@dimen/px811"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#565656"
+                        android:textSize="@dimen/px40"
+                        />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#4cdae4"
+                    android:textSize="@dimen/px35"
+                    android:id="@+id/status"
+                    android:visibility="gone"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/MissonDetailText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mission_request"
+                    />
+
+                <TextView
+                    android:id="@+id/mission_type"
+                    style="@style/MissonDetailText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    style="@style/MissonDetailText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mission_href"
+                    />
+
+                <TextView
+                    android:id="@+id/mission_href"
+                    style="@style/MissonDetailText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+
+                <TextView
+                    android:id="@+id/misson_remain"
+                    style="@style/MissonDetailText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/px35"
+                    android:layout_height="@dimen/px35"
+                    android:background="@drawable/time_clock"
+                    />
+
+                <TextView
+                    android:id="@+id/date_block"
+                    style="@style/MissonDetailText"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="04月4日-06月7日"
+                    android:textColor="#ff0000"
+                    />
+                <TextView
+                    android:layout_width="@dimen/px265"
+                    android:layout_height="@dimen/px82"
+                    android:background="@drawable/gogogo"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/px107"
+                    android:text="追加任务"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/px35"
+                    android:id="@+id/add_more"
+                    />
+                <ImageView
+                    android:layout_width="@dimen/px71"
+                    android:layout_height="@dimen/px52"
+                    android:id="@+id/task_type_icon"
+                    android:scaleType="fitXY"
+                    android:layout_marginLeft="@dimen/px30"
+                    android:layout_marginRight="@dimen/px30"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+</RelativeLayout>
